@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>X Live Medios</title>
+  <style>
+    :root {
+      --color-primario: #0a0a23;
+      --color-secundario: #0077cc;
+      --color-fondo: #f4f4f4;
+      --color-texto: #333;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--color-fondo);
+      color: var(--color-texto);
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .main-content {
+      width: 70%;
+      overflow-y: scroll;
+    }
+
+    .sidebar {
+      width: 30%;
+      background-color: #1c1c3c;
+      color: white;
+      padding: 20px;
+      box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+    }
+
+    header {
+      background-image: url('portada.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      flex-direction: column;
+    }
+
+    .logo {
+      width: 150px;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background-color: #1c1c3c;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--color-secundario);
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--color-primario);
+    }
+
+    .btn {
+      background-color: var(--color-secundario);
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: var(--color-primario);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      color: var(--color-secundario);
+    }
+
+    .sidebar p {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-content">
+    <header>
+      <img src="logo.png" alt="logotipo" class="logo">
+      <h1>X Live Medios</h1>
+      <p>Producción de contenidos y radiodifusión digital</p>
+    </header>
+
+    <nav>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#programacion">Programación</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="nosotros">
+      <h2>¿Quiénes somos?</h2>
+      <p>X Live Medios es una empresa productora especializada en contenidos multimedia, radio digital y cobertura de eventos. Con más de 10,000 seguidores, nos posicionamos como una voz activa en la región, conectando audiencias con información, entretenimiento y cultura.</p>
+    </section>
+
+    <section id="programacion">
+      <h2>Programación destacada</h2>
+      <ul>
+        <li><strong>Despierta Xico</strong> – Noticias locales y entrevistas (Lunes a viernes, 7:00 AM)</li>
+        <li><strong>Conexión Urbana</strong> – Cultura y música emergente (Martes y jueves, 6:00 PM)</li>
+        <li><strong>Zona Retro</strong> – Éxitos del ayer (Sábados, 9:00 PM)</li>
+      </ul>
+    </section>
+
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <p>Ofrecemos soluciones integrales en:</p>
+      <ul>
+        <li>Producción audiovisual para empresas y eventos</li>
+        <li>Publicidad en radio digital y redes sociales</li>
+        <li>Transmisión en vivo y cobertura multimedia</li>
+        <li>Diseño de contenido para streaming y podcast</li>
+      </ul>
+      <a href="#contacto" class="btn">Solicita una cotización</a>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>📍 Ubicación: Xico, Veracruz<br>
+         📞 Teléfono: 228-123-4567<br>
+         📧 Correo: contacto@xlivemedios.mx</p>
+      <p>Síguenos en redes sociales: Facebook, Instagram, YouTube</p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 X Live Medios. Todos los derechos reservados.</p>
+    </footer>
+  </div>
+
+  <div class="sidebar">
+    <h2>Información fija</h2>
+    <p><strong>Ubicación:</strong> Xico, Veracruz</p>
+    <p><strong>Teléfono:</strong> 228-123-4567</p>
+    <p><strong>Correo:</strong> contacto@xlivemedios.mx</p>
+    <hr>
+    <p><strong>Redes sociales:</strong><br> Facebook, Instagram, YouTube</p>
+    <p><strong>Horario de atención:</strong><br> Lunes a viernes, 9:00 AM – 6:00 PM</p>
+  </div>
+
+</body>
+</html>
